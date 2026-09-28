@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #333;
+  color: white;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.links a, .links button {
+  margin: 5px;
+  color: white;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  padding: 15px;
+  text-align: center;
+}
+
+input, select {
+  padding: 10px;
+  margin: 10px;
+  width: 90%;
+  max-width: 300px;
+}
+
+button {
+  padding: 10px 15px;
+  background: teal;
+  color: white;
+  border: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+.footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #ccc;
+  margin: 0 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+/* Mobile Friendly */
+@media (max-width: 600px) {
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
